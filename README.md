@@ -68,3 +68,4 @@ Dự án được xây dựng bằng kiến trúc web hiện đại chuẩn tĩn
 - **Font chữ:** `Cinzel` (Serif quý tộc cho tiêu đề) kết hợp `Plus Jakarta Sans` (Sans-serif hiện đại cho nội dung).
 - **Trải nghiệm tương tác cao:** Tự động đếm số (IntersectionObserver), tương tác vector 2D bản đồ, lọc sản phẩm realtime, mô phỏng CRM đa kênh, popup reader và AI Chatbot.
 "# hoithocuabien" 
+"# hoithocuabien" 

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiến Độ Dự Án | Hơi Thở Của Biển</title>
+  <meta name="description" content="Cập nhật tiến độ xây dựng thực tế công trường dự án Hơi Thở Của Biển. Thi công 3 ca liên tục, cam kết vượt tiến độ 45 ngày.">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23082032' stroke='%23D4AF37' stroke-width='4'/><path d='M25 60 C35 45, 45 45, 55 60 C65 75, 75 75, 85 60' stroke='%2338BDF8' stroke-width='5' fill='none' stroke-linecap='round'/><circle cx='50' cy='36' r='12' fill='%23D4AF37'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ocean: {
+              950: '#031320',
+              900: '#082032',
+              800: '#0d2e4d',
+              700: '#14426d',
+              500: '#0284c7',
+              400: '#38bdf8',
+            },
+            gold: {
+              300: '#fef08a',
+              400: '#facc15',
+              500: '#d4af37',
+              600: '#ca8a04',
+              700: '#a16207',
+            }
+          },
+          fontFamily: {
+            heading: ['Cinzel', 'serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-ocean-950 text-slate-100 font-body selection:bg-gold-500 selection:text-ocean-950">
+
+  <!-- Header -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-4 md:px-8 bg-ocean-950/70 backdrop-blur-md border-b border-gold-500/10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-full border border-gold-500/40 bg-gradient-to-tr from-ocean-900 to-ocean-800 flex items-center justify-center shadow-lg group-hover:border-gold-400 transition-colors">
+          <svg class="w-6 h-6 text-gold-400" viewBox="0 0 100 100" fill="none">
+            <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="4" stroke-dasharray="6 4"/>
+            <path d="M22 62 C34 44, 46 44, 58 62 C70 78, 82 78, 92 62" stroke="#38BDF8" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="50" cy="36" r="14" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-heading font-extrabold text-base md:text-xl tracking-wider text-gold-gradient uppercase leading-none">
+            Hơi Thở Của Biển
+          </span>
+          <span class="text-[10px] uppercase tracking-[0.25em] text-sky-300/80 font-medium">
+            Breath of the Sea
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium tracking-wide text-slate-200">
+        <a href="index.html" class="hover:text-gold-400 transition-colors py-2">Trang chủ</a>
+        <a href="tong-quan.html" class="hover:text-gold-400 transition-colors py-2">Tổng quan</a>
+        <a href="vi-tri.html" class="hover:text-gold-400 transition-colors py-2">Vị trí</a>
+        <a href="tien-ich.html" class="hover:text-gold-400 transition-colors py-2">Hệ sinh thái</a>
+        
+        <!-- MEGA MENU TRIGGER -->
+        <div class="has-mega-menu group py-2">
+          <a href="mat-bang.html" class="flex items-center gap-1.5 hover:text-gold-400 transition-colors">
+            <span>Mặt bằng</span>
+            <i class="fa-solid fa-chevron-down text-[10px] text-gold-500 group-hover:rotate-180 transition-transform duration-300"></i>
+          </a>
+          
+          <div class="mega-menu absolute left-1/2 -translate-x-1/2 top-full w-full max-w-6xl px-4 pt-3">
+            <div class="glass-panel rounded-2xl p-6 shadow-2xl border border-gold-500/30">
+              <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-700/60">
+                <div>
+                  <h4 class="font-heading font-bold text-amber-300 text-lg">Mặt Bằng Quy Hoạch Đại Đô Thị</h4>
+                  <p class="text-xs text-slate-300">Bấm vào phân khu để xem chi tiết bản vẽ quy hoạch, diện tích và bảng giá</p>
+                </div>
+                <a href="mat-bang.html" class="text-xs font-semibold text-sky-400 hover:text-sky-300 flex items-center gap-1">
+                  Xem trang Mặt bằng đầy đủ &rarr;
+                </a>
+              </div>
+              <div class="grid grid-cols-4 gap-4">
+                <a href="mat-bang.html#ngoc-trai" class="group/sub rounded-xl overflow-hidden bg-slate-900/80 border border-slate-700/60 hover:border-gold-400 transition-all p-3 flex flex-col">
+                  <div class="relative h-28 rounded-lg overflow-hidden mb-2.5">
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=600&q=80" alt="Biệt thự Ngọc Trai" class="w-full h-full object-cover group-hover/sub:scale-110 transition-transform duration-500">
+                    <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500 text-slate-950 uppercase">180 Căn</span>
+                  </div>
+                  <h5 class="font-bold text-sm text-white group-hover/sub:text-gold-400 transition-colors">Biệt Thự Ngọc Trai</h5>
+                  <p class="text-[11px] text-slate-400 mb-2">Đơn Lập & Song Lập hướng biển</p>
+                  <span class="text-xs font-mono font-bold text-amber-300 mt-auto">Từ 28 - 45 Tỷ</span>
+                </a>
+
+                <a href="mat-bang.html#san-ho" class="group/sub rounded-xl overflow-hidden bg-slate-900/80 border border-slate-700/60 hover:border-gold-400 transition-all p-3 flex flex-col">
+                  <div class="relative h-28 rounded-lg overflow-hidden mb-2.5">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Shophouse San Hô" class="w-full h-full object-cover group-hover/sub:scale-110 transition-transform duration-500">
+                    <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-bold bg-orange-500 text-white uppercase">320 Căn</span>
+                  </div>
+                  <h5 class="font-bold text-sm text-white group-hover/sub:text-gold-400 transition-colors">Shophouse San Hô</h5>
+                  <p class="text-[11px] text-slate-400 mb-2">Phố đi bộ thương mại 5 tầng</p>
+                  <span class="text-xs font-mono font-bold text-amber-300 mt-auto">Từ 12.5 - 19 Tỷ</span>
+                </a>
+
+                <a href="mat-bang.html#aqua-breeze" class="group/sub rounded-xl overflow-hidden bg-slate-900/80 border border-slate-700/60 hover:border-gold-400 transition-all p-3 flex flex-col">
+                  <div class="relative h-28 rounded-lg overflow-hidden mb-2.5">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="The Aqua Breeze" class="w-full h-full object-cover group-hover/sub:scale-110 transition-transform duration-500">
+                    <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-bold bg-sky-500 text-white uppercase">4 Tòa Tháp</span>
+                  </div>
+                  <h5 class="font-bold text-sm text-white group-hover/sub:text-gold-400 transition-colors">The Aqua Breeze</h5>
+                  <p class="text-[11px] text-slate-400 mb-2">Căn hộ & Sky Villa vô cực</p>
+                  <span class="text-xs font-mono font-bold text-amber-300 mt-auto">Từ 3.8 - 11.5 Tỷ</span>
+                </a>
+
+                <a href="mat-bang.html#ocean-sapphire" class="group/sub rounded-xl overflow-hidden bg-slate-900/80 border border-slate-700/60 hover:border-gold-400 transition-all p-3 flex flex-col">
+                  <div class="relative h-28 rounded-lg overflow-hidden mb-2.5">
+                    <img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=600&q=80" alt="Ocean Sapphire" class="w-full h-full object-cover group-hover/sub:scale-110 transition-transform duration-500">
+                    <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-bold bg-indigo-500 text-white uppercase">36 Dinh Thự</span>
+                  </div>
+                  <h5 class="font-bold text-sm text-white group-hover/sub:text-gold-400 transition-colors">Ocean Sapphire</h5>
+                  <p class="text-[11px] text-slate-400 mb-2">Dinh thự có bến du thuyền riêng</p>
+                  <span class="text-xs font-mono font-bold text-amber-300 mt-auto">Từ 68 - 135 Tỷ</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="tien-do.html" class="text-gold-400 font-bold transition-colors py-2 border-b-2 border-gold-400">Tiến độ</a>
+        <a href="tin-tuc.html" class="hover:text-gold-400 transition-colors py-2">Tin tức & Sự kiện</a>
+        <a href="lien-he.html" class="hover:text-gold-400 transition-colors py-2">Liên hệ</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-3 md:gap-5">
+        <a href="tel:18006868" class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full border border-gold-500/40 bg-ocean-900/80 hover:bg-gold-500/10 transition-all text-xs font-semibold text-slate-200">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+          <span class="text-slate-400">Hotline:</span>
+          <span class="text-amber-300 font-mono tracking-wider font-bold">1800 6868</span>
+        </a>
+
+        <button data-open-lead-modal class="btn-gold px-4 md:px-5 py-2.5 rounded-full text-xs md:text-sm flex items-center gap-2">
+          <i class="fa-solid fa-file-invoice-dollar"></i>
+          <span>Nhận Bảng Giá</span>
+        </button>
+
+        <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 rounded-xl bg-ocean-900 border border-slate-700 flex items-center justify-center text-slate-200 hover:text-gold-400">
+          <i class="fa-solid fa-bars-staggered text-lg"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu-drawer" class="fixed inset-y-0 right-0 w-80 max-w-[85vw] bg-ocean-950/95 backdrop-blur-2xl z-50 border-l border-gold-500/20 shadow-2xl p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-800">
+        <div class="flex flex-col">
+          <span class="font-heading font-bold text-amber-300">HƠI THỞ CỦA BIỂN</span>
+          <span class="text-[10px] text-sky-400 tracking-wider uppercase">Menu Điều Hướng</span>
+        </div>
+        <button id="mobile-close-btn" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-4 mt-6 text-sm font-medium">
+        <a href="index.html" class="mobile-nav-link text-slate-200 hover:text-gold-400 py-1 flex items-center justify-between">
+          <span>Trang Chủ</span> <i class="fa-solid fa-angle-right text-xs text-slate-600"></i>
+        </a>
+        <a href="tong-quan.html" class="mobile-nav-link text-slate-200 hover:text-gold-400 py-1 flex items-center justify-between">
+          <span>Tổng Quan</span> <i class="fa-solid fa-angle-right text-xs text-slate-600"></i>
+        </a>
+        <a href="vi-tri.html" class="mobile-nav-link text-slate-200 hover:text-gold-400 py-1 flex items-center justify-between">
+          <span>Vị Trí Chiến Lược</span> <i class="fa-solid fa-angle-right text-xs text-slate-600"></i>
+        </a>
+        <a href="mat-bang.html" class="mobile-nav-link text-slate-200 hover:text-gold-400 py-1 flex items-center justify-between">
+          <span>Mặt Bằng & Phân Khu</span> <i class="fa-solid fa-angle-right text-xs text-slate-600"></i>
+        </a>
+        <a href="tien-ich.html" class="mobile-nav-link text-slate-200 hover:text-gold-400 py-1 flex items-center justify-between">
+          <span>Hệ Sinh Thái Tiện Ích</span> <i class="fa-solid fa-angle-right text-xs text-slate-600"></i>
+        </a>
+        <a href="tien-do.html" class="mobile-nav-link text-gold-400 font-bold py-1 flex items-center justify-between">
+          <span>Tiến Độ Dự Án</span> <i class="fa-solid fa-angle-right text-xs text-slate-600"></i>
+        </a>
+        <a href="tin-tuc.html" class="mobile-nav-link text-slate-200 hover:text-gold-400 py-1 flex items-center justify-between">
+          <span>Tin Tức & Thị Trường</span> <i class="fa-solid fa-angle-right text-xs text-slate-600"></i>
+        </a>
+        <a href="lien-he.html" class="mobile-nav-link text-slate-200 hover:text-gold-400 py-1 flex items-center justify-between">
+          <span>Liên Hệ & Tư Vấn</span> <i class="fa-solid fa-angle-right text-xs text-slate-600"></i>
+        </a>
+      </nav>
+    </div>
+
+    <div class="space-y-3 pt-6 border-t border-slate-800">
+      <a href="tel:18006868" class="flex items-center justify-center gap-2 py-3 rounded-xl bg-ocean-900 border border-gold-500/30 text-amber-300 font-bold text-sm">
+        <i class="fa-solid fa-phone"></i> 1800 6868 (Hotline 24/7)
+      </a>
+      <button data-open-lead-modal class="btn-gold w-full py-3 rounded-xl text-center text-xs">
+        Đăng Ký Nhận Bảng Giá
+      </button>
+    </div>
+  </div>
+
+  <!-- Subpage Hero Banner -->
+  <section class="relative pt-36 pb-20 px-4 md:px-8 bg-gradient-to-b from-ocean-900 via-ocean-950 to-ocean-950 border-b border-gold-500/10 overflow-hidden">
+    <div class="absolute inset-0 opacity-20 pointer-events-none">
+      <img src="https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=2000&q=80" alt="Background" class="w-full h-full object-cover">
+    </div>
+
+    <div class="max-w-7xl mx-auto relative z-10 text-center">
+      <div class="flex items-center justify-center gap-2 text-xs text-slate-400 mb-4 font-medium">
+        <a href="index.html" class="hover:text-gold-400 transition-colors">Trang chủ</a>
+        <span>/</span>
+        <span class="text-amber-300">Tiến độ công trường</span>
+      </div>
+
+      <h1 class="font-heading font-extrabold text-4xl sm:text-5xl md:text-6xl text-white uppercase mb-4 tracking-tight">
+        Tiến Độ Xây Dựng <br>
+        <span class="text-gold-gradient">Thực Tế Công Trường</span>
+      </h1>
+      <p class="max-w-2xl mx-auto text-sm sm:text-base text-slate-300 leading-relaxed font-light">
+        Đại công trường thi công ngày đêm với hơn 1,500 nhân sự và máy móc hiện đại, bảo chứng năng lực tài chính và tốc độ bàn giao vượt cam kết 45 ngày.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Timeline Section -->
+  <section class="py-20 px-4 md:px-8 relative bg-ocean-950">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Timeline Navigation Buttons -->
+      <div class="flex items-center justify-center gap-3 mb-12 overflow-x-auto pb-2">
+        <button data-progress-period="q1-2026" class="px-5 py-2.5 rounded-full text-xs font-bold transition-all bg-amber-500 text-slate-950 active whitespace-nowrap">
+          <i class="fa-solid fa-circle-dot mr-1"></i> Hiện Tại (Quý 1/2026)
+        </button>
+        <button data-progress-period="q4-2025" class="px-5 py-2.5 rounded-full text-xs font-bold transition-all bg-slate-800/80 text-slate-300 hover:text-white whitespace-nowrap">
+          Quý 4/2025
+        </button>
+        <button data-progress-period="q3-2025" class="px-5 py-2.5 rounded-full text-xs font-bold transition-all bg-slate-800/80 text-slate-300 hover:text-white whitespace-nowrap">
+          Quý 3/2025
+        </button>
+      </div>
+
+      <!-- Current Period Card -->
+      <div class="glass-panel rounded-3xl p-6 sm:p-10 border-gold-500/30 mb-16 shadow-2xl">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 mb-6 border-b border-slate-700/60">
+          <div>
+            <div class="flex items-center gap-3 mb-2">
+              <span id="progress-percent-badge" class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500 text-slate-950">
+                85% Tiến độ tổng
+              </span>
+              <span class="text-xs text-amber-300 font-medium">Vượt tiến độ cam kết 45 ngày</span>
+            </div>
+            <h3 id="progress-title" class="font-heading font-bold text-xl sm:text-2xl text-white">
+              Hiện Tại (Quý 1 - 2026): Thi Công Hoàn Thiện & Cất Nóc Tháp A
+            </h3>
+          </div>
+          <button data-open-lead-modal class="btn-outline-gold px-5 py-2.5 rounded-full text-xs font-bold tracking-wider whitespace-nowrap self-start md:self-auto">
+            <i class="fa-solid fa-calendar-check mr-1.5"></i> Đăng Ký Xem Thực Tế
+          </button>
+        </div>
+
+        <p id="progress-headline" class="text-slate-300 text-sm mb-6 leading-relaxed">
+          1,500 kỹ sư và công nhân thi công 3 ca liên tục, đảm bảo bàn giao đúng cam kết cho các chủ nhân phân khu đầu tiên.
+        </p>
+
+        <!-- Construction Photo Gallery -->
+        <div id="progress-photos-container" class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+          <div class="group relative rounded-xl overflow-hidden shadow-lg border border-slate-700/60 aspect-video">
+            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=600&q=80" alt="Lắp đặt kính hộp Low-E tháp Aqua" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex items-end p-3">
+              <span class="text-xs font-medium text-slate-200">Lắp đặt kính hộp Low-E tháp Aqua</span>
+            </div>
+          </div>
+          <div class="group relative rounded-xl overflow-hidden shadow-lg border border-slate-700/60 aspect-video">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="Hoàn thiện trục đường Shophouse San Hô" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex items-end p-3">
+              <span class="text-xs font-medium text-slate-200">Hoàn thiện trục đường Shophouse San Hô</span>
+            </div>
+          </div>
+          <div class="group relative rounded-xl overflow-hidden shadow-lg border border-slate-700/60 aspect-video">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80" alt="Hạ tầng ngầm phân khu Ngọc Trai" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex items-end p-3">
+              <span class="text-xs font-medium text-slate-200">Hệ thống hạ tầng ngầm phân khu Ngọc Trai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-ocean-900/80 border border-slate-700 flex items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center flex-shrink-0 animate-pulse">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-white">Video Flycam 4K Toàn Cảnh Công Trường</div>
+              <div id="progress-video-caption" class="text-[11px] text-slate-400">Flycam 4K tuần 1 tháng này ghi nhận diện mạo đại đô thị hoàn chỉnh 85%</div>
+            </div>
+          </div>
+          <button data-open-lead-modal class="text-xs font-bold text-sky-400 hover:text-sky-300 whitespace-nowrap">
+            Xem Video Gốc 4K &rarr;
+          </button>
+        </div>
+      </div>
+
+      <!-- Milestone Checklist Table -->
+      <div class="glass-panel rounded-3xl p-6 sm:p-10 border-gold-500/30">
+        <h3 class="font-heading font-bold text-xl sm:text-2xl text-white uppercase mb-6 flex items-center gap-3">
+          <i class="fa-solid fa-list-check text-amber-400"></i>
+          <span>Kế Hoạch Bàn Giao & Mốc Nghiệm Thu Dự Án</span>
+        </h3>
+
+        <div class="overflow-x-auto rounded-xl border border-slate-800">
+          <table class="w-full text-left border-collapse text-sm">
+            <thead>
+              <tr class="bg-ocean-900 text-xs text-slate-400 uppercase">
+                <th class="py-3 px-4">Hạng Mục Công Trình</th>
+                <th class="py-3 px-4">Kế Hoạch Dự Kiến</th>
+                <th class="py-3 px-4">Tình Trạng Thực Tế</th>
+                <th class="py-3 px-4">Đơn Vị Giám Sát</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 text-xs sm:text-sm">
+              <tr>
+                <td class="py-3.5 px-4 font-bold text-white">Kè Biển 3.2km & Hồ Lagoon 5.2ha</td>
+                <td class="py-3.5 px-4 text-slate-400">Quý 4/2025</td>
+                <td class="py-3.5 px-4"><span class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-950 text-emerald-300 border border-emerald-500/30">Đã nghiệm thu 100%</span></td>
+                <td class="py-3.5 px-4 text-slate-300">Bureau Veritas (Pháp)</td>
+              </tr>
+              <tr>
+                <td class="py-3.5 px-4 font-bold text-white">Cất Nóc Tháp The Aqua Breeze</td>
+                <td class="py-3.5 px-4 text-slate-400">Quý 2/2026</td>
+                <td class="py-3.5 px-4"><span class="px-2.5 py-1 rounded-full text-xs font-bold bg-amber-950 text-amber-300 border border-amber-500/30">Đã cất nóc sớm 45 ngày</span></td>
+                <td class="py-3.5 px-4 text-slate-300">Coteccons & Hòa Bình</td>
+              </tr>
+              <tr>
+                <td class="py-3.5 px-4 font-bold text-white">Hoàn Thiện Shophouse San Hô 5 Tầng</td>
+                <td class="py-3.5 px-4 text-slate-400">Quý 3/2026</td>
+                <td class="py-3.5 px-4"><span class="px-2.5 py-1 rounded-full text-xs font-bold bg-sky-950 text-sky-300 border border-sky-500/30">Đang hoàn thiện mặt ngoài</span></td>
+                <td class="py-3.5 px-4 text-slate-300">Apave International</td>
+              </tr>
+              <tr>
+                <td class="py-3.5 px-4 font-bold text-white">Bàn Giao Sổ Hồng Đợt 1 (Ngọc Trai)</td>
+                <td class="py-3.5 px-4 text-slate-400">Quý 4/2026</td>
+                <td class="py-3.5 px-4"><span class="px-2.5 py-1 rounded-full text-xs font-bold bg-indigo-950 text-indigo-300 border border-indigo-500/30">Chuẩn bị hồ sơ pháp lý</span></td>
+                <td class="py-3.5 px-4 text-slate-300">Chủ Đầu Tư & Sở TNMT</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ocean-950 border-t border-gold-500/20 pt-16 pb-10 px-4 md:px-8 relative text-slate-300 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800/80">
+        <div class="lg:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full border border-gold-500/40 bg-gradient-to-tr from-ocean-900 to-ocean-800 flex items-center justify-center">
+              <svg class="w-5 h-5 text-gold-400" viewBox="0 0 100 100" fill="none">
+                <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="4" stroke-dasharray="6 4"/>
+                <path d="M22 62 C34 44, 46 44, 58 62 C70 78, 82 78, 92 62" stroke="#38BDF8" stroke-width="6" stroke-linecap="round"/>
+                <circle cx="50" cy="36" r="14" fill="currentColor"/>
+              </svg>
+            </div>
+            <div>
+              <span class="font-heading font-extrabold text-lg tracking-wider text-gold-gradient uppercase block">Hơi Thở Của Biển</span>
+              <span class="text-[10px] uppercase tracking-[0.2em] text-sky-300/80">Breath of the Sea Metropolis</span>
+            </div>
+          </div>
+          <p class="text-slate-400 leading-relaxed text-xs max-w-md">
+            Đại đô thị sinh thái nghỉ dưỡng chuẩn quốc tế với 3.2km đường bờ biển riêng biệt. Nơi tôn vinh phong cách sống thượng lưu và bảo chứng giá trị truyền đời.
+          </p>
+        </div>
+
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider text-gold-400">Khám Phá</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="index.html" class="hover:text-gold-400 transition-colors">Trang chủ</a></li>
+            <li><a href="tong-quan.html" class="hover:text-gold-400 transition-colors">Tổng quan dự án</a></li>
+            <li><a href="vi-tri.html" class="hover:text-gold-400 transition-colors">Vị trí chiến lược</a></li>
+            <li><a href="mat-bang.html" class="hover:text-gold-400 transition-colors">Mặt bằng & Phân khu</a></li>
+            <li><a href="tien-ich.html" class="hover:text-gold-400 transition-colors">Hệ sinh thái tiện ích</a></li>
+            <li><a href="tien-do.html" class="hover:text-gold-400 transition-colors">Tiến độ công trường</a></li>
+            <li><a href="tin-tuc.html" class="hover:text-gold-400 transition-colors">Tin tức & Thị trường</a></li>
+            <li><a href="lien-he.html" class="hover:text-gold-400 transition-colors">Liên hệ tư vấn</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-5 space-y-3">
+          <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider text-gold-400">Thông Tin Liên Hệ</h4>
+          <div class="space-y-2 text-xs text-slate-300">
+            <div><i class="fa-solid fa-location-dot text-amber-400 mr-2"></i> <strong>Dự án:</strong> Cung đường Hoàng Hôn, Vịnh Biển Thượng Lưu, Khánh Hòa.</div>
+            <div><i class="fa-solid fa-phone text-amber-400 mr-2"></i> <strong>Hotline:</strong> 1800 6868 - 0909 888 999</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div>&copy; 2026 Hơi Thở Của Biển. Bản quyền được bảo lưu.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Actions -->
+  <aside class="floating-actions" aria-label="Kênh liên hệ nhanh">
+    <a href="tel:18006868" class="floating-btn bg-emerald-600 hover:bg-emerald-500 pulse-teal" aria-label="Hotline">
+      <i class="fa-solid fa-phone text-lg"></i>
+      <span class="tooltip">Hotline 1800 6868</span>
+    </a>
+    <a href="https://zalo.me" target="_blank" class="floating-btn bg-blue-600 hover:bg-blue-500" aria-label="Zalo">
+      <span class="font-extrabold text-sm font-mono">Zalo</span>
+      <span class="tooltip">Nhắn tin Zalo 24/7</span>
+    </a>
+    <button id="chat-toggle-btn" class="floating-btn bg-gradient-to-tr from-amber-500 to-amber-300 text-slate-950 font-bold pulse-gold shadow-2xl relative" aria-label="AI Chatbot">
+      <i class="fa-solid fa-robot text-xl"></i>
+      <span class="tooltip">Trợ lý AI OceanBot 24/7</span>
+    </button>
+  </aside>
+
+  <!-- OceanBot Chatbot Window -->
+  <div id="ocean-chatbot" class="glass-panel rounded-2xl shadow-2xl border border-gold-500/40 overflow-hidden">
+    <div class="p-3.5 bg-gradient-to-r from-ocean-900 to-ocean-800 border-b border-gold-500/30 flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-slate-950 text-sm font-bold shadow">
+          <i class="fa-solid fa-sparkles"></i>
+        </div>
+        <div>
+          <div class="font-bold text-sm text-white flex items-center gap-1.5">
+            <span>OceanBot VIP</span>
+            <span class="text-[10px] px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">AI 24/7</span>
+          </div>
+          <div class="text-[10px] text-slate-300">Tư vấn viên AI Bất Động Sản</div>
+        </div>
+      </div>
+      <button id="chat-close-btn" class="w-7 h-7 rounded-lg bg-slate-800/80 text-slate-400 hover:text-white flex items-center justify-center">
+        <i class="fa-solid fa-xmark text-xs"></i>
+      </button>
+    </div>
+    <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3 bg-ocean-950/70">
+      <div class="flex items-start gap-2 max-w-[90%] mb-3">
+        <div class="w-7 h-7 rounded-full bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-slate-950 text-xs font-bold flex-shrink-0 mt-0.5 shadow">
+          <i class="fa-solid fa-sparkles"></i>
+        </div>
+        <div>
+          <div class="chat-msg-agent text-slate-100 text-xs px-4 py-3 leading-relaxed shadow-lg">
+            Dạ kính chào Quý khách! Hiện tại công trường đang hoàn thiện 85% tổng khối lượng. Quý khách có muốn đăng ký xe limousine đón đi tham quan thực tế công trường không ạ?
+          </div>
+        </div>
+      </div>
+    </div>
+    <form id="chatbot-form" class="p-3 bg-ocean-900 border-t border-slate-800 flex items-center gap-2">
+      <input type="text" id="chat-input" placeholder="Hỏi lịch bàn giao, xem nhà mẫu hoặc để lại SĐT..." class="flex-1 bg-ocean-950 border border-slate-700 rounded-xl px-3.5 py-2 text-xs text-white focus:outline-none focus:border-gold-400 placeholder:text-slate-500">
+      <button type="submit" class="w-9 h-9 rounded-xl bg-gold-gradient text-slate-950 flex items-center justify-center font-bold">
+        <i class="fa-solid fa-paper-plane text-xs"></i>
+      </button>
+    </form>
+  </div>
+
+  <!-- Lead Modal -->
+  <div id="lead-register-modal" class="app-modal fixed inset-0 z-[100] hidden overflow-y-auto modal-backdrop bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="relative w-full max-w-lg rounded-3xl bg-ocean-950 border border-gold-500/50 shadow-2xl p-6 sm:p-8 my-8">
+      <button data-close-modal class="absolute top-5 right-5 w-8 h-8 rounded-lg bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="text-center mb-6">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-amber-500 to-amber-300 text-slate-950 flex items-center justify-center mx-auto mb-3 shadow-lg">
+          <i class="fa-solid fa-calendar-check text-xl"></i>
+        </div>
+        <h3 class="font-heading font-bold text-2xl text-white uppercase">Đăng Ký Tham Quan Công Trường</h3>
+        <p class="text-xs text-slate-300 mt-1">Xe Limousine đưa đón tận nơi từ sân bay hoặc trung tâm TP.HCM</p>
+      </div>
+      <form id="quick-lead-form" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1.5">Họ và Tên *</label>
+          <input type="text" name="fullname" required placeholder="Nguyễn Văn A" class="w-full bg-ocean-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-400">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1.5">Số Điện Thoại (Zalo) *</label>
+          <input type="tel" name="phone" required placeholder="0909 xxx xxx" class="w-full bg-ocean-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-400">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1.5">Thời Gian Mong Muốn Tham Quan</label>
+          <input type="date" name="date" class="w-full bg-ocean-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-400">
+        </div>
+        <button type="submit" class="btn-gold w-full py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 mt-4">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Xác Nhận Đặt Lịch Tham Quan</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div id="success-modal" class="app-modal fixed inset-0 z-[110] hidden overflow-y-auto modal-backdrop bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="relative w-full max-w-md rounded-3xl bg-ocean-950 border border-emerald-500/50 shadow-2xl p-6 sm:p-8 text-center my-8">
+      <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center mx-auto mb-4 animate-bounce">
+        <i class="fa-solid fa-circle-check text-3xl"></i>
+      </div>
+      <h3 class="font-heading font-bold text-2xl text-white uppercase mb-2">Đăng Ký Thành Công!</h3>
+      <p id="success-modal-msg" class="text-xs sm:text-sm text-slate-300 mb-6 leading-relaxed">
+        Chuyên viên tư vấn phụ trách sẽ liên hệ xác nhận lịch trình xe đưa đón với Quý khách.
+      </p>
+      <button data-close-modal class="btn-gold w-full py-3 rounded-xl text-xs font-bold uppercase tracking-wider">
+        Hoàn Tất & Đóng
+      </button>
+    </div>
+  </div>
+
+  <script src="js/chatbot.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

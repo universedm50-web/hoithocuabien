@@ -23,25 +23,42 @@ Website giới thiệu và bán hàng dự án bất động sản nghỉ dưỡ
 
 ---
 
-## 📁 CẤU TRÚC THƯ MỤC DỰ ÁN
+## 📁 CẤU TRÚC HỆ THỐNG TRANG ĐỘC LẬP (MULTI-PAGE ROUTING)
+
+Hệ thống đã được thiết kế thành **các trang con độc lập riêng biệt**, có thanh điều hướng và chuyển trang đầy đủ:
+
+1. **`index.html`** - **Trang Chủ**: Đại cảnh quan, Hero Banner toàn màn hình với chế độ Flycam, các con số biết nói, tổng hợp các phân khu và tiện ích biểu tượng.
+2. **`tong-quan.html`** - **Trang Tổng Quan**: Tuyên ngôn kiến tạo di sản, hồ sơ Chủ đầu tư & Các đối tác thiết kế quốc tế (Foster+Partners, HOK, Ascott, Marriott), bộ đếm tự động (Counter), hồ sơ pháp lý 100% sổ hồng lâu dài và brochure tải về.
+3. **`vi-tri.html`** - **Trang Vị Trí Chiến Lược**: Bản đồ Leaflet tương tác toàn diện (theme Dark Ocean), các ghim tọa độ hạ tầng kết nối kèm cự ly & thời gian di chuyển, phân tích đòn bẩy cao tốc và sân bay quốc tế.
+4. **`mat-bang.html`** - **Trang Mặt Bằng & Phân Khu**: Bản đồ tương tác vector 2D SVG toàn dự án, bộ lọc sản phẩm đa chiều (Loại hình, Mức giá, Diện tích), chi tiết 4 phân khu (Ngọc Trai, San Hô, Aqua Breeze, Sapphire) và modal hồ sơ kỹ thuật căn mẫu.
+5. **`tien-ich.html`** - **Trang Hệ Sinh Thái Tiện Ích**: Hơn 68 tiện ích All-in-one cao cấp (Lagoon 5.2ha, Marina Club, Hồ bơi 360°, Sân golf PGA 18 lỗ, Onsen Spa...), bộ lọc danh mục và Lightbox modal phóng to ảnh sắc nét.
+6. **`tien-do.html`** - **Trang Tiến Độ Dự Án**: Timeline cập nhật công trường qua các quý (Hiện tại 85% - vượt 45 ngày), album ảnh thực tế thi công, bảng nghiệm thu công trình và form đăng ký xe Limousine đón đi xem thực tế.
+7. **`tin-tuc.html`** - **Trang Tin Tức & Thị Trường**: Tin dự án, phân tích xu hướng BĐS biển, chính sách ưu đãi Early Bird, tìm kiếm trực tiếp và modal đọc bài viết chi tiết.
+8. **`lien-he.html`** - **Trang Liên Hệ & Tư Vấn**: Thông tin liên hệ ban quản lý, địa chỉ thực tế và Sales Gallery, đồng hồ đếm ngược FOMO, form đăng ký nhận bảng giá kết nối CRM simulator.
 
 ```
 C:\Users\vu.dominh\Downloads\Hơi thở của biển/
 │
-├── index.html            # Giao diện chính của Landing Page (Đầy đủ 11 Module)
+├── index.html            # Trang Chủ (Home Landing)
+├── tong-quan.html        # Trang Tổng Quan Dự Án & Pháp Lý
+├── vi-tri.html           # Trang Vị Trí Chiến Lược & Bản Đồ Leaflet
+├── mat-bang.html         # Trang Mặt Bằng Quy Hoạch & Bản Đồ 2D SVG
+├── tien-ich.html         # Trang Hệ Sinh Thái Tiện Ích & Lightbox
+├── tien-do.html          # Trang Tiến Độ Công Trường & Timeline
+├── tin-tuc.html          # Trang Tin Tức, Thị Trường & Bài Viết
+├── lien-he.html          # Trang Liên Hệ & Đăng Ký Tư Vấn VIP
 ├── README.md             # Tài liệu dự án và hướng dẫn sử dụng
 │
 ├── css/
-│   └── style.css         # Hệ thống giao diện Ultra Luxury, bảng màu biển sâu và vàng ánh kim
+│   └── style.css         # Hệ thống giao diện Ultra Luxury (Navy, Gold, Glassmorphism)
 │
 ├── js/
-│   ├── main.js           # Xử lý Sticky Header, Hero Slider, Animated Counter, Lightbox, Timeline, News, Lead Form & CRM
+│   ├── main.js           # Xử lý Slider, Counter, Timeline, Lightbox, Filter, Form CRM
 │   ├── map.js            # Module 04: Bản đồ Leaflet tương tác vị trí & liên kết vùng
 │   ├── masterplan.js     # Module 05: Bản đồ tương tác SVG 2D quy hoạch phân khu & bộ lọc
 │   └── chatbot.js        # Module 10: Trợ lý AI OceanBot 24/7 tư vấn thông minh
-│
 └── assets/
-    └── images/           # Thư mục chứa hình ảnh tài nguyên
+    └── images/           # Thư mục hình ảnh & tài nguyên dự án
 ```
 
 ---

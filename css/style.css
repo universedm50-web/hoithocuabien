@@ -1,0 +1,397 @@
+/* ==========================================================================
+   HƠI THỞ CỦA BIỂN - LUXURY RESORT & COASTAL METROPOLIS
+   Master Design System & Custom Styling
+   ========================================================================== */
+
+:root {
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  
+  --c-deep-navy: #031320;
+  --c-navy: #082032;
+  --c-navy-light: #0f3454;
+  --c-ocean-blue: #0284c7;
+  --c-ocean-teal: #0d9488;
+  --c-sea-foam: #e0f2fe;
+  
+  --c-gold-primary: #d4af37;
+  --c-gold-light: #f6e05e;
+  --c-gold-dark: #996515;
+  --c-gold-gradient: linear-gradient(135deg, #f6e05e 0%, #d4af37 50%, #b7791f 100%);
+  --c-gold-text-gradient: linear-gradient(135deg, #fff2a3 0%, #d4af37 50%, #aa771c 100%);
+  
+  --glass-bg: rgba(8, 32, 50, 0.75);
+  --glass-border: rgba(212, 175, 55, 0.25);
+  --glass-glow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+}
+
+body {
+  background-color: var(--c-deep-navy);
+  color: #f1f5f9;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--c-deep-navy);
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a5f;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-gold-primary);
+}
+
+/* Typography Helpers */
+.font-heading {
+  font-family: var(--font-heading);
+}
+.font-body {
+  font-family: var(--font-body);
+}
+
+.text-gold-gradient {
+  background: var(--c-gold-text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: var(--c-gold-gradient);
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+  background: rgba(8, 32, 50, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.glass-panel-hover {
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(12, 43, 68, 0.85);
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Header & Sticky */
+#main-header {
+  transition: all 0.4s ease;
+}
+#main-header.scrolled {
+  background: rgba(3, 19, 32, 0.92);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+}
+
+/* Mega Menu Dropdown */
+.has-mega-menu {
+  position: static;
+}
+.mega-menu {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+.has-mega-menu:hover .mega-menu,
+.mega-menu:hover {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Luxury Button */
+.btn-gold {
+  background: var(--c-gold-gradient);
+  color: #031320;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+}
+.btn-gold::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 20%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: rotate(30deg);
+  transition: all 0.75s ease;
+}
+.btn-gold:hover::before {
+  left: 140%;
+}
+.btn-gold:hover {
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.45);
+  transform: translateY(-2px);
+}
+
+.btn-outline-gold {
+  border: 1px solid var(--c-gold-primary);
+  color: #f6e05e;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+.btn-outline-gold:hover {
+  background: rgba(212, 175, 55, 0.15);
+  color: #ffffff;
+  border-color: #f6e05e;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+/* Pulse animation for phone / CTA */
+@keyframes goldPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(212, 175, 55, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+  }
+}
+.pulse-gold {
+  animation: goldPulse 2s infinite;
+}
+
+@keyframes tealPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(14, 165, 233, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(14, 165, 233, 0);
+  }
+}
+.pulse-teal {
+  animation: tealPulse 2s infinite;
+}
+
+/* Floating Action Speed Dial */
+.floating-actions {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 990;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+.floating-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  color: white;
+  position: relative;
+}
+.floating-btn:hover {
+  transform: scale(1.12);
+}
+.floating-btn .tooltip {
+  position: absolute;
+  right: 64px;
+  white-space: nowrap;
+  background: rgba(3, 19, 32, 0.95);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+.floating-btn:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  right: 60px;
+}
+
+/* Wave divider */
+.wave-divider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.wave-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 60px;
+}
+
+/* Swiper overrides */
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.4) !important;
+  width: 10px !important;
+  height: 10px !important;
+  opacity: 0.6 !important;
+  transition: all 0.3s ease !important;
+}
+.swiper-pagination-bullet-active {
+  background: var(--c-gold-primary) !important;
+  width: 28px !important;
+  border-radius: 6px !important;
+  opacity: 1 !important;
+}
+
+/* Leaflet Map overrides for Dark Ocean theme */
+#map {
+  width: 100%;
+  height: 520px;
+  border-radius: 16px;
+  z-index: 10;
+}
+.leaflet-popup-content-wrapper {
+  background: rgba(8, 32, 50, 0.95) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+  border-radius: 12px !important;
+  color: #f1f5f9 !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5) !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+.leaflet-popup-content {
+  margin: 14px 16px !important;
+  font-family: var(--font-body) !important;
+}
+.leaflet-popup-tip {
+  background: rgba(8, 32, 50, 0.95) !important;
+  border-left: 1px solid rgba(212, 175, 55, 0.4) !important;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.4) !important;
+}
+.custom-map-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.custom-map-marker:hover {
+  transform: scale(1.25);
+}
+
+/* Interactive Masterplan SVG */
+.masterplan-zone {
+  cursor: pointer;
+  transition: all 0.35s ease;
+  fill-opacity: 0.45;
+  stroke-width: 2;
+  stroke: rgba(255, 255, 255, 0.7);
+}
+.masterplan-zone:hover,
+.masterplan-zone.active {
+  fill-opacity: 0.85;
+  stroke: #fde047;
+  stroke-width: 3.5;
+  filter: drop-shadow(0px 0px 10px rgba(212, 175, 55, 0.9));
+}
+
+/* Lightbox Modal */
+.lightbox-overlay {
+  background: rgba(2, 10, 18, 0.94);
+  backdrop-filter: blur(10px);
+}
+
+/* AI Chatbot Container */
+#ocean-chatbot {
+  position: fixed;
+  bottom: 95px;
+  right: 28px;
+  width: 380px;
+  max-width: calc(100vw - 40px);
+  height: 560px;
+  max-height: calc(100vh - 120px);
+  z-index: 995;
+  transform: translateY(20px) scale(0.95);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+#ocean-chatbot.open {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Chat bubble styling */
+.chat-msg-agent {
+  background: rgba(15, 52, 84, 0.85);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 16px 16px 16px 2px;
+}
+.chat-msg-user {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  border-radius: 16px 16px 2px 16px;
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+  animation: shimmer 2.5s infinite;
+}
+
+/* Custom Checkbox / Radio styling */
+input[type="checkbox"], input[type="radio"] {
+  accent-color: var(--c-gold-primary);
+}
